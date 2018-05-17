@@ -1,4 +1,14 @@
 const http = require('http');
 
-//1. Create a server
-//2. For any request, response 'It works!' as plain text
+const hostname  = 'localhost';
+const port      = 8080;
+
+let server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('It works!');
+});
+
+server.listen(port, hostname, () => {
+    console.log(`Server running @ http://${hostname}:${port}`);
+});
