@@ -82,7 +82,7 @@ function addNewData(data = null)
             ['level', 'character', 'race', 'class'].forEach(prop => {
                 row.push(data[prop]);
             });
-            fs.appendFileSync(filePath, row.join(';'), charset);
+            fs.appendFileSync(filePath, `${row.join(';')}\n`, charset);
             newRows++;
         } else {
             error = {};
