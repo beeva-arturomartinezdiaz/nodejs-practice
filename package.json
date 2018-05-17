@@ -1,0 +1,7 @@
+{
+    "name": "nodejs-practice",
+    "version": "1.0.0",
+    "description": "An easy NodeJS practice",
+    "author": "Arturo Martínez <arturo.martinez@wolfchamane.com>",
+    "license": "ISC"
+}
