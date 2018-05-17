@@ -1,4 +1,31 @@
 const EventsEmitter = require('events');
 
-//1. Create two classes, on will extends EventsEmitter
-//2. Communicate both classes, so after creating and running first one, second is created
+class FirstClass extends EventsEmitter
+{
+    constructor()
+    {
+        super();
+        console.log('FirstClass created!');
+        setTimeout(() => {
+            this.emit('created');
+        }, 10);
+    }
+    start()
+    {
+        console.log('FirstClass started!');
+        this.emit('started');
+    }
+}
+class SecondClass
+{
+    constructor()
+    {
+        console.log('SecondClass created!');
+    }
+}
+
+let firstClassInstance = new FirstClass();
+firstClassInstance.on('started', () => {
+    new SecondClass();
+});
+firstClassInstance.on('created', firstClassInstance.start);
