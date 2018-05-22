@@ -1,0 +1,11 @@
+{
+    "name": "nodejs-practices-05-desktop-app",
+    "private": true,
+    "version": "0.0.0",
+    "main": "index.js",
+    "dependencies": {
+    },
+    "scripts": {
+        "start": "electron ."
+    }
+}
