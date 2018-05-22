@@ -1,0 +1,60 @@
+html {
+    --app-background: #FFFFFF;
+    --app-color: #000000;
+}
+
+html, body {
+    background-color: var(--app-background, #FFFFFF);
+    color: var(--app-color, #000000);
+    font: normal normal 14px/1 'Arial', 'sans-serif';
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+}
+
+button {
+    padding: 4px 16px;
+    margin: 6px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: var(--app-color, #000000);
+    color: var(--app-background, #FFFFFF);
+    cursor: pointer;
+    font-size: 1.2em;
+    outline: none;
+}
+
+.form {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--app-background, #FFFFFF);
+}
+
+.form.open {
+    display: block;
+}
+
+.form label {
+    display: block;
+    width: 100%;
+    text-indent: 5px;
+    margin-bottom: 5px;
+}
+
+.form .form-actions {
+    display: flex;
+    justify-content: center;
+}
