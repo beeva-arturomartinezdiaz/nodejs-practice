@@ -11,11 +11,10 @@ _Se puede usar cualquier framework o librería para la parte front-end._
 
 ## Instalación
 
-Ejecutar los siguientes comandos para instalar las dependencias necesarias:
+Ejecutar el siguiente comando para instalar las dependencias necesarias:
 
 ```bash
-$ npm install --save electron
-$ npm install --save express
+$ npm install --save electron express body-parser
 ```
 
 ## Ejecución
