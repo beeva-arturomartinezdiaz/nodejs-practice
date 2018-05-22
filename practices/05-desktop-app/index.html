@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>05 - Desktop APP</title>
+        <link rel="stylesheet" href="./src/app/app.css"/>
+    </head>
+    <body>
+        <h1>Characters</h1>
+        <div class="table"></div>
+        <div class="actions">
+            <button id="get-csv-btn">Get Characters</button>
+            <button id="open-form">Add new character</button>
+        </div>
+
+        <div id="form-new-char" class="form">
+            <h2>New character</h2>
+            <label for="char-level">
+                <span>Level:</span>
+                <input id="char-level" type="number" placeholder="Level (1-10)"/>
+            </label>
+            <label for="char-character">
+                <span>Name:</span>
+                <input id="char-character" type="text" placeholder="Name"/>
+            </label>
+            <label for="char-race">
+                <span>Race:</span>
+                <input id="char-race" type="text" placeholder="Race"/>
+            </label>
+            <label for="char-class">
+                <span>Class:</span>
+                <input id="char-class" type="text" placeholder="Class"/>
+            </label>
+            <div class="form-actions">
+                <button id="save-new-character">Save character</button>
+                <button id="close-form">Cancel</button>
+            </div>
+        </div>
+
+        <script src="./src/app/app.js"></script>
+    </body>
+</html>
