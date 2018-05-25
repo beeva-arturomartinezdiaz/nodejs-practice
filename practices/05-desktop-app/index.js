@@ -23,7 +23,7 @@ function createWindow() {
 
     ['info', 'error'].forEach(ev => {
         [getData, postData].forEach(ms => {
-            ms.on(ev, e => {console.log(`${(new Date()).toISOString()} [${ev.toUpperCase()}] ${e}`); });
+            ms.on(ev, e => {console.log(`[${(new Date()).toISOString()}] [${ev.toUpperCase()}] ${e}`); });
         });
     });
 
