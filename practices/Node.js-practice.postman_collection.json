@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "dd07d96c-229c-4ba2-a2ad-962f5962ecb6",
+		"name": "Node.js-practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"level\":1,\"character\":\"foo\",\"race\":\"Human\",\"class\":\"Warlock\"}]"
+				},
+				"url": {
+					"raw": "http://localhost:3001/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"data"
+					]
+				},
+				"description": "foo"
+			},
+			"response": []
+		},
+		{
+			"name": "/data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"level\":1,\"character\":\"foo\",\"race\":\"Human\",\"class\":\"Warlock\"}]"
+				},
+				"url": {
+					"raw": "http://localhost:3000/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"data"
+					]
+				},
+				"description": "foo"
+			},
+			"response": []
+		}
+	]
+}
