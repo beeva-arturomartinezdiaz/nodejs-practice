@@ -117,7 +117,7 @@ const server = http.createServer((req, res) => {
         default:
             result.error = '0001';
             result.message = `Invalid server path: ${req.url}`;
-            finishRequest(400, result, res);
+            finishRequest(404, result, res);
     }
 });
 
